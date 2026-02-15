@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loveyy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="bg-music" src="nothing.mp3" loop></audio>
+    <div id="container">
+        <div id="password-screen">
+            <h1>Enter Password</h1>
+            <input type="password" id="password-input">
+            <button onclick="checkPassword()">Submit</button>
+            <p id="wrong-pass" class="hidden" style="color: red; margin-top: 10px;"></p>
+        </div>
+
+        <div id="valentine-screen" class="hidden">
+            <h1>Will you be my Valentine?  (sorry kasi na-busy talaga ako kahapon. hindi ko naman talaga nakalimutan na valentine’s day huhu, promise. nasabay lang talaga siya sa paggawa ko ng thesis ko kaya super naano ako sa tasks. ang daming need tapusin kasi TT)</h1>
+            <img src="flowers.png" alt="Flowers" class="flower-img">
+            <div>
+                <button onclick="showLetter()">Yes ❤️</button>
+                <button onclick="showCrying()">No (wag mo click to luh TT (may balik yan maem HAHAHAHA)</button>
+            </div>
+        </div>
+
+        <div id="letter-screen" class="hidden">
+            <h1>happy valentine's day, lovey ko !! ^^</h1>
+            <p></p>
+            <button onclick="showPlaylist()">Next</button>
+            <button onclick="goBack('letter-screen', 'valentine-screen')">Back</button>
+        </div>
+
+        <div id="playlist-screen" class="hidden">
+            <h1>songs that remind me of u (wow naman) 🎶</h1>
+        
+            <div class="playlist-item">
+                <img src="nothing.png" alt="Nothing Cover" class="song-cover">
+                <p><strong>nothing – fave song ko lang talaga siya HAHAHAJAS, pag tumutugtog siya parang automatic ikaw naiisip ko. wala namang deep reason, parang naging ikaw na yung association ko dun. pag naririnig ko siya, ikaw agad.</strong></p>
+                <audio controls><source src="nothing.mp3" type="audio/mpeg"></audio>
+            </div>
+        
+            <div class="playlist-item">
+                <img src="sweetnothing.png" alt="Sweet Nothing Cover" class="song-cover">
+                <p><strong>sweet nothing – cute lang. "to you i can admit that i'm just too soft for all of it?!</strong></p>
+                <audio controls><source src="sweetnothing.mp3" type="audio/mpeg"></audio>
+            </div>
+        
+            <div class="playlist-item">
+                <img src="snowonthebeach.png" alt="Dalangin Cover" class="song-cover">
+                <p><strong>snow on the beach - alam mo na bakit HAHAHAHA slowburn :P</strong></p>
+                <audio controls><source src="snowonthebeach.mp3" type="audio/mpeg"></audio>
+            </div>
+        
+            <div class="playlist-item">
+                <img src="patutunguhan.png" alt="Patutunguhan Cover" class="song-cover">
+                <p><strong>patutunguhan - ito naman parang about sa kung saan papunta yung isang bagay diba. so napapaisip ako kung san ba to papunta, kung ano ba tayo in the long run. idk, nagmamanifest ako na sana tayo talaga JKAHDJHAJDHA ipipilit ko to</strong></p>
+                <audio controls><source src="patutunguhan.mp3" type="audio/mpeg"></audio>
+            </div>
+        
+            <button onclick="showReasons()">Next</button>
+            <button onclick="goBack('playlist-screen', 'letter-screen')">Back</button>
+        </div>
+        
+
+        <div id="reasons-screen" class="hidden">
+            <h1> 14 reasons why i like you (because it’s feb 14 kahit 16 na huhu)</h1>
+            <div class="reason-item"> 1. una sa lahat, kasi mortal enemies tayo HAHAHA joke. pero feel ko dun pa lang nag-click na agad tayo. parang ang bilis ng connection, parang same vibes agad ganun </div>
+            <div class="reason-item"> 2. we immediately clicked. hindi siya pilit or awkward huehue </div>
+            <div class="reason-item"> 3. i feel super comfy with you. nakita mo naman kung paano ako mag-yap sayo diba 😭 hindi aq nahihiya maging madaldal at weird minsan HAHAHAH.</div>
+            <div class="reason-item"> 4. you love dogs just like me. automatic plus points pag dog lover.</div>
+            <div class="reason-item"> 5.ang cute mo pag sinusungitan mo ko. ewan q baliw siguro ako pero naccutetan talaga ako kasi alam kong hindi mo mine-mean yun</div>
+            <div class="reason-item"> 6. ang cute mo rin kasi hindi ka marunong mag-express ng feelings mo. parang nahihiya ka pa or nahihirapan ka sabihin, pero ramdam ko naman :<</div>
+            <div class="reason-item"> 7. yes opo, ang ganda mo. physically and emotionally. hindi lang sa itsura, pero sa way mo mag-isip and umintindi HAHAHAHA ANG OFF NAMAN NITO</div>
+            <div class="reason-item"> 8. you really try to see my side kahit ang hirap ko intindihin minsan. and i appreciate that more than you know ^^</div>
+            <div class="reason-item"> 9. you listen. kahit nonsense na kwento ko minsan, nakikinig ka pa rin and you respond like it actually matters :></div>
+            <div class="reason-item"> 10. i like how honest you are. hindi ka ano, kung ano talaga nasa isip mo, yun sinasabi mo (kahit masungit 😭)</div>
+            <div class="reason-item"> 11. joker ka kasi HAHAHAHAHA medyo funny ka minsan, bigyan kita points dun</div>
+            <div class="reason-item"> 12. you’re lowkey soft kahit kunwari ano ka but ramdam ko yung soft mo behind all that</div>
+            <div class="reason-item"> 13. i feel safe around you. emotionally safe. hindi ko kailangan magpanggap or mag-adjust masyado (di ko branding to, sana di basahin TT HAHAHAH)</div>
+            <div class="reason-item"> 14. and lastly, i just really like you. walang masyadong deep explanation. i just do ^^</div>
+            <button onclick="goBack('reasons-screen', 'playlist-screen')">Back</button>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
